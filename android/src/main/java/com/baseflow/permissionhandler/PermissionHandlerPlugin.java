@@ -118,11 +118,6 @@ public class PermissionHandlerPlugin implements MethodCallHandler {
     registrar.addActivityResultListener(new ActivityResultListener() {
       @Override
       public boolean onActivityResult(int requestCode, int responseCode, Intent intent) {
-        if (requestCode == PERMISSION_CODE_IGNORE_BATTERY_OPTIMIZATIONS) {
-          permissionHandlerPlugin.handleIgnoreBatteryOptimizationsRequest(responseCode == Activity.RESULT_OK);
-          return true;
-        }
-
         return false;
       }
     });
