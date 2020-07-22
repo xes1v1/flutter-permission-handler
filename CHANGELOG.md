@@ -1,3 +1,6 @@
+## 4.0.0
+* android v2插件兼容
+
 ## 3.2.2
 
 * Fixed problem with dependency on specific version of gradle wrapper on Android.
